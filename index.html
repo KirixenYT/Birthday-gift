@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Happy birthday - Sam</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if (window.location.href.endsWith('.html')) {
+      history.replaceState(null, null, window.location.href.slice(0, -5));
+    }
+    </script>
+</head>
+<body>
+  <div id="loading-overlay">
+    <div class="loader"></div>
+    <p>Loading...</p>
+  </div>
+  <div class="container" id="content">
+    <h1 class="hi">Happy Birthday someone!</h1>
+    <p class="important">Only someone can access the website, Unless theh share the password with others!</p>
+    <p class="hi">Please enter the password to proceed:</p>
+    <form id="passwordForm">
+      <input type="password" id="passwordInput" required>
+      <button type="submit" class="button-24" role="button">Enter</button>
+    </form>
+    <br>
+    <p id="errorMessage" class="error-message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
