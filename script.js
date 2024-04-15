@@ -10,6 +10,11 @@ document.getElementById('passwordForm').addEventListener('submit', function(even
     window.location.href = 'visualgift.html'; // Redirect
   } else {
     errorMessage.textContent = 'Incorrect password. Please try again.';
+    
+    // Remove the error message after 3 seconds
+    setTimeout(function() {
+      errorMessage.textContent = ''; // Clear the error message
+    }, 2000); // 3 seconds (3000 milliseconds)
   }
 });
 
